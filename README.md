@@ -3,7 +3,7 @@
 
 This repository contains a Python-based framework for performing Bayesian inference on the ringdown portion of a gravitational wave signal. The analysis is conducted directly in the time domain using a custom likelihood built for the `bilby` inference library. The code is designed to analyze data for specific events, with `GW231123` used as the primary example.
 
-The core of this project is a time-domain "Fast Bayesian Inference" (FBI) likelihood that uses pre-calculated auto-correlation functions (ACFs) to characterize the noise, allowing for efficient parameter estimation of black hole merger remnants.
+The core of this project is a time-domain "Full Bayesian Inference" (FBI) likelihood that uses pre-calculated auto-correlation functions (ACFs) to characterize the noise, allowing for efficient parameter estimation of black hole merger remnants.
 
 
 
