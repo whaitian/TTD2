@@ -1,7 +1,5 @@
 # Time-Domain Bayesian Inference for Gravitational Wave Ringdown Analysis
 
-<<<<<<< HEAD
-
 
 This repository contains a Python-based framework for performing Bayesian inference on the ringdown portion of a gravitational wave signal. The analysis is conducted directly in the time domain using a custom likelihood built for the `bilby` inference library. The code is designed to analyze data for specific events, with `GW231123` used as the primary example.
 
@@ -64,8 +62,8 @@ You will need Python 3.8+ and the following packages. We strongly recommend usin
    Bash
 
    ```
-   git clone https://github.com/your-username/your-repository-name.git
-   cd your-repository-name
+   git clone https://github.com/whaitian/TTD2.git
+   cd TTD2
    ```
 
 2. **Create a Virtual Environment and Install Dependencies**
@@ -117,6 +115,13 @@ First, run the data preparation script. This will process the `.gwf` files and c
 
 Bash
 
+For GW150914 ringdown analysis:
+```
+python save_psd_acf.py
+```
+This one is used in the study "arXiv:2311.13300".
+
+For GW231123 ringdown analysis:
 ```
 python save_psd_acf_GW231123.py
 ```
@@ -157,14 +162,3 @@ python td_FBI.py --outdir 'my_analysis_run'
 
 The script will create a new directory for the results (e.g., `FBI_analysis_results/221+201_15M_0-4s/`) containing posterior samples, run metadata, and a corner plot of the key physical parameters.
 
-------
-=======
-## Noise estimated by the pyRing packge
-### With a sample rate at 2048 Hz
-rin_2k.ini
-### With a sample rate at 16384 Hz
-rin_8k.ini
-
-# Noises here are used for analyses in arXiv: 2311.13300
-## The pyRing version is [2.1.0](https://git.ligo.org/lscsoft/pyring/-/tree/v2.1.0?ref_type=tags). The PyCBC version is [2.0.5](https://github.com/gwastro/pycbc/tree/v2.0.5)
->>>>>>> 5def845f9c2691e9e94ff6a0927f401e06444513
